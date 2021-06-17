@@ -1,0 +1,29 @@
+@media(max-width:600px){
+    .header .logo, .user img {
+       
+        display: none;
+    }
+    .header .top-nav {
+        position: fixed;
+        width: 100%;
+        z-index: 500;
+        background-color: black;
+    }
+    .menu_res {
+        position: fixed;
+        z-index: 2000;
+        display: block;
+        top: 0;
+        right: 20px;    
+    }
+    .owl-stage {
+        width: auto;
+        display: flex;
+      
+    }
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 200px;
+        margin-right: 10px;
+    }
+}

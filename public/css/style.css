@@ -1,0 +1,323 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    background-color: black;
+}
+.container{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.header{
+   height: auto;
+   width: 100%; 
+   background: linear-gradient(#161616, black);
+}
+.header .top-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo, .user{
+    width: auto;
+    margin-right: 10px;
+    
+}
+.header .logo, .user img{
+    width: 60px;
+    border-radius: 100%;
+    height: 60px;
+    object-fit: cover;
+    
+}
+.header .logo img{
+    width: 60px;
+    margin-top: 10px;
+}
+.header .banner{
+    position: relative;
+}
+
+.header .nav{
+    width: 100%;
+    line-height: 55px;
+}
+.header .nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #131313dc;
+
+}
+.header .nav ul li{
+    list-style: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.header .nav ul li input {
+    height: 24px;
+}
+.header .nav ul li a{
+    padding: 5px;
+    text-decoration: none;
+    color: snow;
+}
+
+@media (max-width:600px){
+    .header .nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.header .tags{
+    position: absolute;
+    width: auto;
+    bottom: 15px;
+    right: 0;
+    left: 0;
+}
+.header .tags ul{
+    display: flex;
+    justify-content: center;
+}
+.header .tags ul li{
+    list-style: none;
+    margin-right: 4px;
+    margin-left: 4px;
+    color: snow;
+}
+.header--opt{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 50px;
+    margin-bottom: 20px;
+    background: rgb(12, 12, 12);
+    margin-top: -5px;
+}
+.header--opt__icons{
+    width: auto;
+    font-size: 16px;
+    text-align: center;
+    line-height: 10px;
+
+}
+.header--opt__icons p{
+    color: snow;
+}
+.header--opt__icons img{
+    width: 30px;
+    filter: invert(100%);
+}
+.header--opt__icons .btn--play{
+    background-color: white;
+    height: 70%;
+    margin-top: 5%;
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+.header--opt__icons .btn--play .text-play{
+    line-height: 30px;
+    }
+.header--opt__icons .btn--play .opt-img{
+    filter: invert(0);
+    margin-top: 2px;
+}
+.movies{
+    margin-left: 10px;
+}
+.movies .movies--sections{
+   color: snow;
+}
+.movies .movies--sections h2{
+    font-size: 18px;
+    margin: 10px;
+    text-align: center;
+}
+.movies--sections__slide{
+    display: flex;
+    margin-top: 10px;
+    overflow: scroll;
+    height: auto;
+}
+.movies--sections__slide img{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.movies--sections__slide img:hover{
+    transform: scale(1.1);
+    transition: all 600ms;
+    cursor: pointer;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar .navbar--opt{
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    font-size: 12px;
+}
+.navbar .navbar--opt img{
+
+    filter: invert(30%);
+
+}
+.navbar .navbar--active{
+    color: snow;
+}
+.navbar .navbar--active img{
+    filter: invert(100%);
+}
+
+.more{
+    min-width: 160px;
+    max-height: 236px;
+    background: rgb(5, 2, 51);
+    border: none;
+    border-radius: 5px;
+    line-height: 260px;
+    text-align: center;
+    font-size: 26px;
+    color: snow;
+}
+
+@media (min-width:200px){
+    .movies--sections__slide img{
+      width: 160px;
+        
+    }
+}
+
+@media (min-width:600px){
+    .header .banner video{
+        width: 100%;
+    }
+    .movies--sections__slide{
+        display: flex;
+        margin-top: 10px;
+        flex-flow: row wrap;
+        height: auto;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+}
+@media (min-width:1000px){
+    .header .banner video{
+        max-height: 600px;
+        object-fit: cover;
+    }
+}
+
+.body{
+background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/71cfa010-f8dd-4298-a94d-1ae5034a857c/d0fef6bc-9001-48f5-90a8-676e801094ad/MX-es-20210425-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+background-size: 100%;
+}
+
+.login{
+    width: 400px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: snow;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-top: 15%;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.login:hover{
+    background-color: rgba(0, 0, 0, 0.911);
+    transition: 600ms;
+    transform: scale(1.03);
+}
+.login input{
+    margin-left: 10px;
+    padding-left: 5px;
+    background-color: rgb(27, 26, 26);
+    color: snow;
+    height: 50px;
+    border: none;
+}
+.login .form-login{
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    height: 50px;
+    padding: 4px;
+    margin-top: 20px;
+}
+.login label{
+    width: 100%;
+    margin-left: 10px;
+}
+.login button{
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    border: none;
+    color: snow;
+    text-align: center;
+    background-color: steelblue;
+    margin: 10px;
+}
+.login button:hover{
+    background-color: rgb(45, 106, 156);
+}
+.login{
+    position: relative;
+}
+.login .logo-form{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: -100px;
+    font-size: 26px;
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.541);
+    border-top-left-radius: 10px;
+
+}
+
+.menu_res{
+    position: absolute;
+    z-index: 2000;
+    display: none;
+    top: 0;
+    right: 20px;
+}
+.menu_res input{
+    display: none;
+}
+.login form{
+    padding: 10px;
+}
+.login a{
+    font-size: 17px;
+}
+.login .aviso a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #ccc;
+    margin: 10px;
+    display: block;
+}
+
+
+

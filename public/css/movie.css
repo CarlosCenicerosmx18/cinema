@@ -1,0 +1,81 @@
+.description{
+    width: 80%;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: snow;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.description h3{
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.actors{
+    display: flex;
+    margin-top: 10px;
+    flex-flow: row wrap;
+    height: auto;
+    justify-content: center;
+    color: snow;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.actors .actor{
+    width: 110px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.actors .actor img{
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+.txt{
+    color: snow;
+    text-align: center;
+}
+.title{
+    color: snow;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+@media (max-width:600px){
+   video{
+       width: 100%;
+       object-fit: cover;
+   }
+}
+.comments{
+    width: 80%;
+    margin: 0 auto;
+  
+}
+.comments h2{
+    color: snow;
+}
+.comments h3{
+    font-size: 18px;
+    text-align: center;
+    color: #ccc;
+}
+.new-coment form textarea{
+    background: #ccc;
+    height: 100px;
+}
+.comments .content{
+    color: snow;
+}
+.comentario-u{
+    border: 1px solid #242424;
+}
+.act-text{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: snow;
+    width: 100%;
+    padding: 5px;
+}
